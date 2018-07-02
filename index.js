@@ -63,8 +63,8 @@ const unifiedServer = function(req, res) {
             statusCode = typeof(statusCode) == 'number' ? statusCode : 403;
             payload = typeof(payload) == 'object' ? payload : {};
             const response = JSON.stringify(payload);
-            console.log('returning statusCode ', statusCode);
-            console.log('returning response ', response);
+            console.log('statusCode ', statusCode);
+            console.log('response ', response);
             res.setHeader('Content-Type', 'application/json');
             res.end(response);
         });
