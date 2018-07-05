@@ -75,6 +75,7 @@ const unifiedServer = function(req, res) {
         // /ping route for uptime monitoring 
         '/ping': handler.ping,        
         '/user': handler.user,
-        '/token': handler.token
+        '/token': handler.token,
+        '/check': handler.check
     };
 }
